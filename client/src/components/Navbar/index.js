@@ -2,7 +2,7 @@ import React from "react";
 import "./style.css";
 
 function Navbar(props) {
-  return <h1 className="navbar">{props.children}</h1>;
+  return ( 
 <div>
   <nav class="navbar">
 <ul>
@@ -10,13 +10,13 @@ function Navbar(props) {
     <a href = "/">Clicky Game</a>
     
   </li>
-  <li class = "text">{props.children}</li>
-  <li>Score: {props.children}|Top Score: {props.children}</li>
+  <li class = "text">{props.children.statement}</li>
+  <li>Score: {props.children.score}|Top Score: {props.children.topScore}</li>
 </ul>
   </nav>
 </div>
-
-}
+  );
+};
 
 
 export default Navbar;
