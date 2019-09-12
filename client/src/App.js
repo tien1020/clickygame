@@ -1,8 +1,9 @@
 import React, { Component } from "react";
 import FriendCard from "./components/FriendCard";
-import Wrapper from "./components/Wrapper";
-import Title from "./components/Navbar";
+import Header from "./components/Header";
+import Navbar from "./components/Navbar";
 import friends from "./friends.json";
+import Footer from "./components/Footer";
 
 class App extends Component {
   state = {

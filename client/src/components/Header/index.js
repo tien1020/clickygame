@@ -1,8 +1,12 @@
 import React from "react";
 import "./style.css";
 
-function Wrapper(props) {
-  return <div className="wrapper">{props.children}</div>;
+function Header(props) {
+  return <header className="header">
+    <h1>Clicky Game!</h1>
+    <h2>Click on an image to earn points, but don't click on any more than once!</h2>
+
+  </header>;
 }
 
 export default Wrapper;
