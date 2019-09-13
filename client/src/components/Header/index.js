@@ -9,4 +9,4 @@ function Header(props) {
   </header>;
 }
 
-export default Wrapper;
+export default Header;

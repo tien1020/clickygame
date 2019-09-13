@@ -4,14 +4,14 @@ import "./style.css";
 function Navbar(props) {
   return ( 
 <div>
-  <nav class="navbar">
+  <nav className="navbar">
 <ul>
-  <li class="brand">
+  <li className="brand">
     <a href = "/">Clicky Game</a>
     
   </li>
-  <li class = "text">{props.children.statement}</li>
-  <li>Score: {props.children.score}|Top Score: {props.children.topScore}</li>
+  <li className = "text">{props.clickStatement}</li>
+  <li>Score: {props.score}|Top Score: {props.topScore}</li>
 </ul>
   </nav>
 </div>
