@@ -24,15 +24,26 @@ class App extends Component {
     if (hasValue === -1) {
       clickValue.push(id)
       this.setState({
-        score: clickValue.length
+        score: clickValue.length,
+        clickStatement: "You guessed correctly!",
+        friends: this.shuffle() 
       })
     }
     else {
       console.log("You loose")
+      this.setState({ clickStatement: "You guessed incorrectly!",
+      score: 0 
+    });
     }
     console.log(clickValue)
   }
 
+  shuffle() {
+    let newFriends = [];
+    this.state.friends.forEach(friend => newFriends.push(friend));
+    newFriends.sort(() => Math.random() - 0.5);
+    return newFriends;
+  }
 
   render() {
     return (
@@ -53,9 +64,10 @@ class App extends Component {
 
           />
         ))}
+        
         <Footer></Footer>
-
       </Wrapper>
+      
     );
   }
 }
