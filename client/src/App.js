@@ -65,7 +65,7 @@ class App extends Component {
           />
         ))}
         
-        <Footer></Footer>
+<Footer></Footer>
       </Wrapper>
       
     );
