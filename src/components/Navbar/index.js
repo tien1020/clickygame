@@ -10,7 +10,7 @@ function Navbar(props) {
     <a href = "/">Clicky Game</a>
     
   </li>
-  <li className = "text">{props.clickStatement} -------- Score: {props.score}|Top Score: {props.topScore}</li>
+  <li className = "text">{props.clickStatement} -------- Score: {props.score}|Top Score: {props.topscore}</li>
 </ul>
   </nav>
 </div>

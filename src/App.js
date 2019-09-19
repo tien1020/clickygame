@@ -24,10 +24,16 @@ class App extends Component {
     if (hasValue === -1) {
       clickValue.push(id)
       this.setState({
-        score: clickValue.length,
+        score: this.state.score+1,
         clickStatement: "You guessed correctly!",
         friends: this.shuffle() 
       })
+
+      if(this.state.score>= this.state.topscore){
+        this.setState({ 
+          topscore:   this.state.topscore +1
+        })
+      }
     }
     else {
       console.log("You loose")
